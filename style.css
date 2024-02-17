@@ -1,0 +1,85 @@
+body {
+    user-select: none;
+background-color: #000000bc;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-image: url('../w.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 1s;
+    border-radius: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 55px;
+    
+
+}
+
+.darken {background-image: none;
+    background-color: rgba(0, 0, 0, 0.5); /* затемненный фон */
+}
+
+
+.def{
+    top: 15%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#playPauseButton{
+    background-color: #fdfdde;
+    width: 70%;
+    height: 70px;
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 45%;
+margin-top: 50%;
+}
+
+.item {
+    margin-left: 40%;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 900;
+}
+.input {
+
+    font-weight: 900;
+    min-height: 60px;
+    height: auto;
+    padding: 5px 20px;
+    grid-column: 1/-1;
+    font-size: 30px;
+    justify-content: flex-end;
+}
+.upper {
+    font-weight: 900;
+    font-size: 30px;
+    margin-left: 3px;
+    margin-top: -20px;
+}
+
+.clean, .back, .percent, .divide, .mul, .sub, .add {
+    color:#fdfdde;
+    font-weight: 900;
+}
+
+.equal { 
+    background-color: #fdfdde;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
